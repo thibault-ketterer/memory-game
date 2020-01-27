@@ -39,7 +39,7 @@ body {
 }
 
 #memory--app-container {
-  background-color: #0061a8;
+  background-color: rgb(113, 111, 113);
   width:100%;
   height:90%;
 }
@@ -215,12 +215,14 @@ body {
   -ms-transform: rotateY(0deg);
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
-  background-color: #e12d00;
+  /*background-color: #e12d00; orange */
+  background-color: black;
   border-radius: 5%;
-  background-image: url(../images/card.svg);
+  /* background-image: url(../images/card.svg);
   background-position:50% 50%;
   background-repeat: no-repeat;
   background-size: contain;
+  */
 
 }
 
@@ -236,6 +238,11 @@ body {
   background-position:50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.back-end {
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* msie */
 }
 
 .back.card-1 {
