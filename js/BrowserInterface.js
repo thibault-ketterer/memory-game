@@ -64,6 +64,13 @@
       this.classList.toggle('clicked');
     }
 
+    if (status.code == 2 ) {
+      setTimeout(function () {
+        var childNodes = document.getElementById('memory--cards').childNodes;
+	    childNodes[status.args[0]].classList.add("back-end");
+	    childNodes[status.args[1]].classList.add("back-end");
+      }.bind(status), nonMatchingCardTime/2);
+	}
     if (status.code == 3 ) {
       setTimeout(function () {
         var childNodes = document.getElementById('memory--cards').childNodes;
